@@ -7,7 +7,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 const {addUser, removeUser, getUser, getUsersInRoom} = require("./users");
-const { callbackify } = require('util');
+const {calculateWinner} = require("./gameLogic");
 app.use(express.json())
 app.use(express.static(__dirname + 'public'));
 let clientPath = path.join(__dirname, 'public');
@@ -58,12 +58,13 @@ const init = async() => {
                 //socket.join(user.room);
                 console.log(user, 'user from server');
 
-                socket.emit('message', {user: 'admin', text: `Welcome to the room ${user.name}`});
+                socket.emit('message', {user: 'admin', text: `welcome to room ${user.room}, ${user.name}`});
+                socket.emit('player', {player: user.player});
                 //send to other sockets
                 socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} has joined`});
                 socket.join(user.room);
 
-                callback();
+                callback(user);
             });
             
             socket.on('sendMessage', (message, callback)=> {
@@ -74,13 +75,24 @@ const init = async() => {
                 callback();
             })
 
-            socket.on('chat message', (msg) => {
-                console.log('message: ' + msg); 
-                //io.emit('chat message', msg);
+            // socket.on('chat message', (msg) => {
+            //     console.log('message: ' + msg); 
+            //     //io.emit('chat message', msg);
+            // });
+
+            socket.on('send move', (move, callback) =>{
+                console.log('button clicked', move);
+                //io.to(user.room).emit('move', {user: user.name, text: message});
             });
+            // socket.on('moveMade', (event) =>{
+            //     console.log('button clicked and a move made');
+            //     io.to(user.room).emit('send move', {event});
+            // });
         
-            socket.on('disconnect', ()=>{
+            socket.on('leave', ()=>{
                 console.log('user disconnected');
+                const user = getUser(socket.id);
+                socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} has left`});
             })
         });
         const port = process.env.PORT || 3000;

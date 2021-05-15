@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Button, TextField } from '@material-ui/core';
+import { Button, TextField, Select, MenuItem, FormControl} from '@material-ui/core';
 import { loginUser } from '../store/storeComponents/loginUser';
 import { Redirect } from 'react-router';
 import './styles/Login.css';
@@ -11,7 +11,7 @@ class Login extends React.Component {
         super(props);
         this.state = {
             name: '',
-            room: '',
+            room: 1,
             success: false
         }
         this.onChange = this.onChange.bind(this);
@@ -25,11 +25,14 @@ class Login extends React.Component {
     async onSubmit(ev) {
         try {
             ev.preventDefault();
-            this.props.loginUser(this.state);
-            // setTimeout(() => {
-            // this.setState({ loading: false, success: true });
-            // }, 1000);
-             this.setState({success:true});
+            if(this.state.name.length > 1)
+            {
+                this.props.loginUser(this.state);
+                this.setState({success:true});
+            }
+            else{
+                alert("Enter a valid Username");
+               }
         } 
         catch (error) {
             console.log(error);
@@ -43,32 +46,43 @@ class Login extends React.Component {
         if (success) {
             return <Redirect to='/Chat' />;
           }
+          const error = name.length < 1;
         return (
             <div className="login">
-                    <form onSubmit={onSubmit} autoComplete='off'>
+                    <FormControl required>
                 <TextField
+                    required
                     id='standard-basic'
-                    required={true}
                     placeholder='Username'
                     value={name}
                     onChange={onChange}
                     name='name'
                     type='name'
                     autoComplete='name'
+                    helperText={error ? "Input a name" : null}
+                    error={error}
                 />
-                <TextField
-                    id='standard-adornment-password'
-                    required={true}
-                    placeholder='Room'
+              
+                {/* <FormControl required > */}
+                <Select
+                    
+                    labelId="select-label"
+                    id="select"
+                    name='room'
                     value={room}
                     onChange={onChange}
-                    name='room'
-                    type='room'
-                    autoComplete='room'
-                />
+                    style={{minWidth: 120}}
+                    >
+                    <MenuItem value={1}>Room 1</MenuItem>
+                    <MenuItem value={2}>Room 2</MenuItem>
+                    <MenuItem value={3}>Room 3</MenuItem>
+                </Select>
+                {/* </FormControl> */}
                 <Button
                     variant='contained'
                     type='submit'
+                    color='secondary'
+                    onClick={onSubmit}
                     // style={{ marginTop: '1rem' }}
                 >
                     Login
@@ -81,7 +95,7 @@ class Login extends React.Component {
                 >
                     Login
                 </Button> */}
-                </form>
+                </FormControl>
                     
                     {/* <Link onClick ={event => (!name || !room) ? event.preventDefault(): null} to= {`/chat ? name = ${name} & room=${room}`}>
                         <button className="button mt-20" type="submit">Sign In</button> 

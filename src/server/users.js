@@ -1,9 +1,8 @@
 const users = [];
 const addUser = ({id, name, room}) => {
-    console.log(this.props, 'props');
     name = name.trim().toLowerCase();
-    room = room.trim().toLowerCase();
-
+    //room = room.trim().toLowerCase();
+    let player = '';
     const existingUser = users.find((user) => user.room === room && user.name === name);
 
     if(existingUser){
@@ -12,7 +11,17 @@ const addUser = ({id, name, room}) => {
         }
     }
 
-    const user = {id, name, room};
+    if(users.length === 0){
+        player = 'X';
+    }
+    else if(users.length === 1){
+        player = 'O';
+    }
+    else {
+        player = 'bystander';
+    }
+
+    const user = {id, name, room, player};
     users.push(user);
     return {user}
 }

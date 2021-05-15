@@ -2,7 +2,7 @@
 .chat-window{
     display:flex;
     flex-direction: column;
-    background: #333; 
+    background: rgb(19, 11, 11); 
     border:3px solid lightcoral;
     background-color: lightgrey;
     width: 300px;
@@ -10,6 +10,7 @@
     padding: 50px;
     margin: 20px;
     overflow-y: scroll;
+    margin-top:2rem;
 }
 .chat-window > .footer{
     background: #42A5F5;
@@ -18,4 +19,13 @@
     bottom: 0;
     width: 100%;
     line-height: 50px;
+}
+.app {
+    display: flex;
+}
+.chat{
+    flex: 1;
+}
+.game{
+    flex: 3;
 }

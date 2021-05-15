@@ -1,17 +1,19 @@
 import React, { useState, useEffect, Fragment} from "react";
 import PersonIcon from '@material-ui/icons/Person';
 import {StyledTableCell, StyledTableRow, StyledTableRow2} from './utils/styledTableCell';
-import TableBody from '@material-ui/core/TableBody';
-import TableRow from '@material-ui/core/TableRow';
-import TableCell from '@material-ui/core/TableCell';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 const Message = ({message: {user, text}, name}) => {
     let isSentByCurrentUser = false;
+    let isSentByAdmin = false;
 
     const trimmedName = name !== undefined ? name.trim().toLowerCase() : 'bob';
 
     if(user === trimmedName){
         isSentByCurrentUser = true;
+    }
+    if(user === 'admin') {
+        isSentByAdmin = true;
     }
 
     // useEffect(() => {
@@ -21,63 +23,63 @@ const Message = ({message: {user, text}, name}) => {
     //   }, [message]);
 
     let date = new Date();
-    let time = date.getHours() > 12 ? (date.getHours() - 12)+ ":" + date.getMinutes() + " PM" : date.getHours()+ ":" + date.getMinutes() + "AM";
+    let hour = date.getHours() > 12 ? date.getHours() -12 : date.getHours();
+    let minutes = date.getMinutes() < 10 ? '0'+ date.getMinutes() : date.getMinutes();
+    let ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    let time = hour+ ":" + minutes + ampm;
 
 
     return (
         isSentByCurrentUser ?
         (
-            //make it blue
+            //current user
             <StyledTableRow>
-                <StyledTableCell rowSpan={3} colSpan={1}>
-                    <PersonIcon />
+                <StyledTableCell rowSpan={4} colSpan={1}>
+                    <PersonIcon color="secondary" />
                 </StyledTableCell>
-                <StyledTableCell colSpan={3}>
-               {trimmedName}
-            {text}
-                {time}
+                <StyledTableCell rowSpan={4}>
+                <form>
+                {trimmedName}:<br></br>
+                {text}<br></br>
+                </form>
+                <small>{time}</small>
                 </StyledTableCell>
             </StyledTableRow>
         )
         :
         (
             //make it sent by someone else
-            <StyledTableRow>
+            isSentByAdmin ?
+            (
+                <StyledTableRow>
                 <StyledTableCell rowSpan={3} colSpan={1} rowSpan={3}>
-                    <PersonIcon />
+                    <NotificationsIcon color="secondary"/>
                 </StyledTableCell>
-                <StyledTableCell>
-                {user}
-            {text}
-                {time}
+                <StyledTableCell rowSpan={3}>
+                <form>
+                {text}<br></br>
+                </form>
+                <small>{time}</small>
                 </StyledTableCell>
             </StyledTableRow>
+            )
+            :
+            (
+                <StyledTableRow>
+                <StyledTableCell rowSpan={3} colSpan={1} rowSpan={3}>
+                    <PersonIcon color="secondary"/>
+                </StyledTableCell>
+                <StyledTableCell rowSpan={3}>
+                <form>
+                {user}:<br></br>
+                {text}<br></br>
+                </form>
+                <small>{time}</small>
+                </StyledTableCell>
+            </StyledTableRow>
+            )
         )
     );
-    // return (
-    //     isSentByCurrentUser ?
-    //     (
-    //         //make it blue
-    //         <div className="messageContainer justifyEnd">
-    //             <AccountCircleIcon />
-    //             <p className="sentText pr-10">{trimmedName}</p>
-    //             <small>{time}</small>
-    //             <div>
-    //                 <p className="messageText colorWhite"> {text}</p>
-    //             </div>
-    //         </div>
-    //     )
-    //     :
-    //     (
-    //         //make it sent by someone else
-    //         <div className="messageContainer justifyStart">
-    //             <div>
-    //             <p className="messageText colorDark"> {text}</p>
-    //             </div>
-    //             <p className="sentText pr-10">{user}</p>
-    //         </div>
-    //     )
-    // );
 }
 
 export default Message;

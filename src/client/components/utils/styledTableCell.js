@@ -4,10 +4,11 @@
 import { withStyles } from '@material-ui/core/styles';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
+import theme from './theme';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.info.main,
     color: theme.palette.common.white,
     fontFamily: 'monospace',
     fontSize: 20,
