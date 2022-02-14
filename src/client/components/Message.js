@@ -16,12 +16,6 @@ const Message = ({message: {user, text}, name}) => {
         isSentByAdmin = true;
     }
 
-    // useEffect(() => {
-    //     if (scrollRef.current) {
-    //       scrollRef.current.scrollIntoView({ behaviour: "smooth" });
-    //     }
-    //   }, [message]);
-
     let date = new Date();
     let hour = date.getHours() > 12 ? date.getHours() -12 : date.getHours();
     let minutes = date.getMinutes() < 10 ? '0'+ date.getMinutes() : date.getMinutes();

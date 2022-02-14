@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Button, TextField, Select, MenuItem, FormControl} from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 import { loginUser } from '../store/storeComponents/loginUser';
 import { Redirect } from 'react-router';
 import './styles/Login.css';
@@ -20,7 +21,7 @@ class Login extends React.Component {
 
     onChange(ev) {
         this.setState({ [ev.target.name]: ev.target.value });
-      }
+    }
 
     async onSubmit(ev) {
         try {
@@ -36,7 +37,7 @@ class Login extends React.Component {
         } 
         catch (error) {
             console.log(error);
-            }
+        }
     }
 
     render() {
@@ -44,11 +45,14 @@ class Login extends React.Component {
         const { onChange, onSubmit } = this;
 
         if (success) {
-            return <Redirect to='/Chat' />;
-          }
-          const error = name.length < 1;
+            return <Redirect to='/App' />;
+        }
+
+        const error = name.length < 1;
+        
         return (
             <div className="login">
+                <Box display="flex" p={2}>
                     <FormControl required>
                 <TextField
                     required
@@ -63,7 +67,6 @@ class Login extends React.Component {
                     error={error}
                 />
               
-                {/* <FormControl required > */}
                 <Select
                     
                     labelId="select-label"
@@ -72,36 +75,28 @@ class Login extends React.Component {
                     value={room}
                     onChange={onChange}
                     style={{minWidth: 120}}
-                    >
+                >
                     <MenuItem value={1}>Room 1</MenuItem>
                     <MenuItem value={2}>Room 2</MenuItem>
                     <MenuItem value={3}>Room 3</MenuItem>
                 </Select>
-                {/* </FormControl> */}
-                <Button
-                    variant='contained'
-                    type='submit'
-                    color='secondary'
-                    onClick={onSubmit}
-                    // style={{ marginTop: '1rem' }}
-                >
-                    Login
-                </Button>
-                {/* <Button
-                    variant='contained'
-                    type='submit'
-                    color='primary'
-                    style={{ marginTop: '1rem' }}
-                >
-                    Login
-                </Button> */}
+                    <Box  sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            mt: 2,
+                            }} >
+                        <Button
+                            variant='contained'
+                            type='submit'
+                            color='secondary'
+                            onClick={onSubmit}
+                        >
+                            Login
+                        </Button>
+                    </Box>
                 </FormControl>
-                    
-                    {/* <Link onClick ={event => (!name || !room) ? event.preventDefault(): null} to= {`/chat ? name = ${name} & room=${room}`}>
-                        <button className="button mt-20" type="submit">Sign In</button> 
-                    </Link> */}
-                
-            </div>
+            </Box>
+        </div>
         );
     }
 }
@@ -110,9 +105,8 @@ const mapDispatchToProps = (dispatch) => {
     return {
       loginUser: (user) => dispatch(loginUser(user)),
     };
-  };
+};
   
-  const mapStateToProps = (state) => state;
+const mapStateToProps = (state) => state;
   
-  export default connect(mapStateToProps, mapDispatchToProps)(Login);
-// export default Join;
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

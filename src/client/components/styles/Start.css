@@ -1,0 +1,44 @@
+.modal {
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal2 {
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #dialog-size2 {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  } 
+
+  #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #bttn_id {
+      height: 100px;
+      width: 200px;
+      font-size: 40px;
+  }
+
+#bttn_id2 {
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+} 
+
+h1 {
+  font-family: "Garamond", "Georgia", serif;
+}

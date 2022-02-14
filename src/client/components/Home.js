@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import StartDialog from "./StartDialog";
+import { ThemeProvider } from '@material-ui/styles';
+import theme from './utils/theme';
  
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h2>Home</h2>
-        
-      </div>
+      <ThemeProvider theme={theme}>
+         <StartDialog></StartDialog>
+      </ThemeProvider>
     );
   }
 }
