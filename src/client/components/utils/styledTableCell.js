@@ -8,7 +8,7 @@ import theme from './theme';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: theme.palette.info.main,
+    backgroundColor: '#0e4686',
     color: theme.palette.common.white,
     fontFamily: 'monospace',
     fontSize: 20,

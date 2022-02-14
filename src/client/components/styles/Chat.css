@@ -13,7 +13,7 @@
     margin-top:2rem;
 }
 .chat-window > .footer{
-    background: #42A5F5;
+    background: #0e4686;
     color: white;
     position: absolute;
     bottom: 0;
@@ -22,10 +22,17 @@
 }
 .app {
     display: flex;
+    margin-top: 2rem;
 }
 .chat{
     flex: 1;
 }
 .game{
     flex: 3;
+}
+
+.gameMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
