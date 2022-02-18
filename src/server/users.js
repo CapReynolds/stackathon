@@ -9,6 +9,7 @@ const addUser = ({id, name, room}) => {
     let turn = false;
     let isConnected = null;
     let opponent = 0;
+    let isWinner;
     const existingUser = users.find((user) => user.room === room && user.name === name);
 
     if(existingUser){
@@ -25,25 +26,46 @@ const addUser = ({id, name, room}) => {
             player = 1;
             letter= 'X';
             turn = true;
+            isWinner = false;
             opponent;
             isConnected;
         }
         else if(room_users.length === 1){
-            if(room_users[0].player ===1) {
-                player = 2;
-                letter= 'O';
-                turn = false;
-                opponent = room_users[0].id;
-                isConnected;
+            if(room_users[0].letter === 'X'){
+                if(room_users[0].player === 1) {
+                    player = 2;
+                    letter= 'O';
+                    turn = false;
+                    isWinner = false;
+                    opponent = room_users[0].id;
+                    isConnected;
+                }
+                else {
+                    player = 1;
+                    letter= 'O';
+                    turn = false;
+                    isWinner = false;
+                    opponent = room_users[0].id;
+                    isConnected;
+                }
             }
             else {
-                room_users[0].player === 1;
-                room_users[0].turn === true;
-                player = 2;
-                letter= 'X';
-                turn = false;
-                opponent = room_users[0].id;
-                isConnected;
+                if(room_users[0].player === 1) {
+                    player = 2;
+                    letter= 'X';
+                    turn = false;
+                    isWinner = false;
+                    opponent = room_users[0].id;
+                    isConnected;
+                }
+                else {
+                    player = 1;
+                    letter= 'X';
+                    turn = false;
+                    isWinner = false;
+                    opponent = room_users[0].id;
+                    isConnected;
+                }
             }
         }
     }
@@ -88,12 +110,21 @@ const updateUser = (id, usr_array) => {
     }
 }
 
+const updateWinner = (id) => {
+    let user = users.find((user) => user.id === id);
+    if(user.isWinner === false)
+        user.isWinner = true;
+    else
+        user.isWinner = false;
+}
+
 module.exports = {
     addUser,
     removeUser,
     getUser,
     getAllUsers,
     updateUser,
-    getUsersInRoom
+    getUsersInRoom,
+    updateWinner
 
 }

@@ -44982,7 +44982,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".modal {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  .modal2 {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  #dialog-size2 {\n    display:flex;\n    flex-direction: column;\n    text-align: center;\n    padding: 15px;\n  } \n\n  #buttons {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n  }\n\n  #bttn_id {\n      height: 100px;\n      width: 200px;\n      font-size: 40px;\n  }\n\n#bttn_id2 {\n  height: 40px;\n  width: 80px;\n  font-size: 20px;\n} \n\nh1 {\n  font-family: \"Garamond\", \"Georgia\", serif;\n}", "",{"version":3,"sources":["webpack://./src/client/components/styles/Start.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,WAAW;IACX,SAAS;IACT,QAAQ;IACR,gCAAgC;EAClC;;EAEA;IACE,kBAAkB;IAClB,WAAW;IACX,SAAS;IACT,QAAQ;IACR,gCAAgC;EAClC;;EAEA;IACE,YAAY;IACZ,sBAAsB;IACtB,kBAAkB;IAClB,aAAa;EACf;;EAEA;IACE,aAAa;IACb,mBAAmB;IACnB,6BAA6B;EAC/B;;EAEA;MACI,aAAa;MACb,YAAY;MACZ,eAAe;EACnB;;AAEF;EACE,YAAY;EACZ,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,yCAAyC;AAC3C","sourcesContent":[".modal {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  .modal2 {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  #dialog-size2 {\n    display:flex;\n    flex-direction: column;\n    text-align: center;\n    padding: 15px;\n  } \n\n  #buttons {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n  }\n\n  #bttn_id {\n      height: 100px;\n      width: 200px;\n      font-size: 40px;\n  }\n\n#bttn_id2 {\n  height: 40px;\n  width: 80px;\n  font-size: 20px;\n} \n\nh1 {\n  font-family: \"Garamond\", \"Georgia\", serif;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".modal {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  .modal2 {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  #dialog-size2 {\n    display:flex;\n    flex-direction: column;\n    text-align: center;\n    padding: 15px;\n  } \n\n  #buttons {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n  }\n\n  #bttn_id {\n      height: 100px;\n      width: 200px;\n      font-size: 40px;\n  }\n\n#bttn_id2 {\n  height: 40px;\n  width: 80px;\n  font-size: 20px;\n} \n\nh1 {\n  font-family: \"Garamond\", \"Georgia\", serif;\n}\n.grid-container1 {\n  display: flex;\n  width: 400px;\n  height: 60px;\n  flex-direction: column;\n  /* background-color: #2196F3; */\n  padding: 10px;\n}\n.grid-container2 {\n  display: flex;\n  flex-direction: row;\n  flex-grow: 2;\n  /* background-color: #2196F3; */\n  padding: 10px;\n}\n.score {\n  display: flex;\n  flex-direction: column;\n\tflex-grow: 2;\n  background-color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(0, 0, 0, 0.8);\n  padding: 20px;\n  font-size: 30px;\n  text-align: center;\n}\n.score_turn {\n  display: flex;\n  flex-direction: column;\n\tflex-grow: 2;\n  background-color: rgba(33, 126, 248, 0.8);\n  border: 1px solid rgba(0, 0, 0, 0.8);\n  padding: 20px;\n  font-size: 30px;\n  text-align: center;\n}", "",{"version":3,"sources":["webpack://./src/client/components/styles/Start.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,WAAW;IACX,SAAS;IACT,QAAQ;IACR,gCAAgC;EAClC;;EAEA;IACE,kBAAkB;IAClB,WAAW;IACX,SAAS;IACT,QAAQ;IACR,gCAAgC;EAClC;;EAEA;IACE,YAAY;IACZ,sBAAsB;IACtB,kBAAkB;IAClB,aAAa;EACf;;EAEA;IACE,aAAa;IACb,mBAAmB;IACnB,6BAA6B;EAC/B;;EAEA;MACI,aAAa;MACb,YAAY;MACZ,eAAe;EACnB;;AAEF;EACE,YAAY;EACZ,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,yCAAyC;AAC3C;AACA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,sBAAsB;EACtB,+BAA+B;EAC/B,aAAa;AACf;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,YAAY;EACZ,+BAA+B;EAC/B,aAAa;AACf;AACA;EACE,aAAa;EACb,sBAAsB;CACvB,YAAY;EACX,0CAA0C;EAC1C,oCAAoC;EACpC,aAAa;EACb,eAAe;EACf,kBAAkB;AACpB;AACA;EACE,aAAa;EACb,sBAAsB;CACvB,YAAY;EACX,yCAAyC;EACzC,oCAAoC;EACpC,aAAa;EACb,eAAe;EACf,kBAAkB;AACpB","sourcesContent":[".modal {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  .modal2 {\n    position: absolute;\n    float: left;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n  }\n\n  #dialog-size2 {\n    display:flex;\n    flex-direction: column;\n    text-align: center;\n    padding: 15px;\n  } \n\n  #buttons {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n  }\n\n  #bttn_id {\n      height: 100px;\n      width: 200px;\n      font-size: 40px;\n  }\n\n#bttn_id2 {\n  height: 40px;\n  width: 80px;\n  font-size: 20px;\n} \n\nh1 {\n  font-family: \"Garamond\", \"Georgia\", serif;\n}\n.grid-container1 {\n  display: flex;\n  width: 400px;\n  height: 60px;\n  flex-direction: column;\n  /* background-color: #2196F3; */\n  padding: 10px;\n}\n.grid-container2 {\n  display: flex;\n  flex-direction: row;\n  flex-grow: 2;\n  /* background-color: #2196F3; */\n  padding: 10px;\n}\n.score {\n  display: flex;\n  flex-direction: column;\n\tflex-grow: 2;\n  background-color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(0, 0, 0, 0.8);\n  padding: 20px;\n  font-size: 30px;\n  text-align: center;\n}\n.score_turn {\n  display: flex;\n  flex-direction: column;\n\tflex-grow: 2;\n  background-color: rgba(33, 126, 248, 0.8);\n  border: 1px solid rgba(0, 0, 0, 0.8);\n  padding: 20px;\n  font-size: 30px;\n  text-align: center;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -95411,15 +95411,22 @@ const App = props => {
   const [message, setMessage] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [messages, setMessages] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const messagesEndRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  const [player, setPlayer] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({});
+  const [player, setPlayer] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    player_one: '',
+    player_two: '',
+    ones_turn: false,
+    twos_turn: false,
+    curr_player: ''
+  });
   const [dis, setDis] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('Awaiting Opponent');
   const [square, setSquare] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
-  const [squares, setSquares] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [gameGrid, setGameGrid] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     game_grid: [],
     game_over: false,
     winner: '',
-    reset: false
+    reset: false,
+    player_one_wins: 0,
+    player_two_wins: 0
   });
   const [error2, setError2] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   let counter = 0; //combine componentDidUpdate, componentDidMount
@@ -95474,29 +95481,113 @@ const App = props => {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     socket.on('recieveMove', (sqID, usr, opp) => {
       let bttn = document.getElementById(sqID);
+      let isGameOver;
       bttn.style.fontSize = "x-large";
       bttn.innerText = usr.letter;
       bttn.dataset.clicked = "true";
       counter++; //check winner
 
-      if (Object(_server_gameLogic__WEBPACK_IMPORTED_MODULE_9__["calculateWinner"])(gameGrid)) {
-        setGameGrid({ ...gameGrid,
-          game_over: true,
-          winner: usr.name
-        });
+      isGameOver = Object(_server_gameLogic__WEBPACK_IMPORTED_MODULE_9__["calculateWinner"])(gameGrid, usr, opp);
+
+      if (isGameOver === true) {
+        let tmp;
+
+        if (usr.player === 1) {
+          tmp = gameGrid.player_one_wins;
+          tmp++;
+          setGameGrid({ ...gameGrid,
+            game_over: true,
+            winner: usr.name,
+            player_one_wins: tmp
+          });
+        } else {
+          tmp = gameGrid.player_two_wins;
+          tmp++;
+          setGameGrid({ ...gameGrid,
+            game_over: true,
+            winner: usr.name,
+            player_two_wins: tmp
+          });
+        }
       } else if (Object(_server_gameLogic__WEBPACK_IMPORTED_MODULE_9__["calculateDraw"])(counter)) {
         setGameGrid({ ...gameGrid,
           game_over: true
         });
       }
-    }), [gameGrid];
-    socket.on('turn.change2', usr => {
-      setDis(`${usr.name}'s turn`);
+    }, [gameGrid]);
+    socket.on('turn.change2', (usr, usr_opp) => {
+      if (gameGrid.winner === '') {
+        // if(usr.turn === true && usr.player === 1)
+        //     setPlayer({...player, player_one: usr.name, player_two: usr_opp.name, ones_turn: true, twos_turn: false });
+        // else if(usr.turn === true && usr.player === 2)
+        //     setPlayer({...player, player_one: usr_opp.name, player_two: usr.name, ones_turn: false, twos_turn: true });
+        // else if(usr.turn === false && usr.player === 1)
+        //     setPlayer({...player, player_one: usr.name, player_two: usr_opp.name, ones_turn: false, twos_turn: true });
+        // else if(usr.turn === false && usr.player === 2)
+        //     setPlayer({...player, player_one: usr_opp.name, player_two: usr.name, ones_turn: true, twos_turn: false });
+        if (usr.turn === true && usr.player === 1) setPlayer({ ...player,
+          player_one: usr.name,
+          player_two: usr_opp.name,
+          ones_turn: true,
+          twos_turn: false
+        });else if (usr.turn === false && usr.player === 1) setPlayer({ ...player,
+          player_one: usr.name,
+          player_two: usr_opp.name,
+          ones_turn: false,
+          twos_turn: true
+        });else if (usr.turn === true && usr.player === 2) setPlayer({ ...player,
+          player_one: usr_opp.name,
+          player_two: usr.name,
+          ones_turn: false,
+          twos_turn: true
+        });
+        if (usr_opp.turn === true && usr_opp.player === 1) setPlayer({ ...player,
+          player_one: usr_opp.name,
+          player_two: usr.name,
+          ones_turn: true,
+          twos_turn: false
+        });else if (usr_opp.turn === false && usr_opp.player === 1) setPlayer({ ...player,
+          player_one: usr_opp.name,
+          player_two: usr.name,
+          ones_turn: false,
+          twos_turn: true
+        });else if (usr_opp.turn === true && usr_opp.player === 2) setPlayer({ ...player,
+          player_one: usr.name,
+          player_two: usr_opp.name,
+          ones_turn: false,
+          twos_turn: true
+        });
+      }
+    });
+    socket.on('turn.player', (user, user2) => {
+      if (gameGrid.winner === '') {
+        if (user.turn === true && user.player === 1) setPlayer({ ...player,
+          player_one: user.name,
+          player_two: user2.name,
+          ones_turn: true,
+          twos_turn: false
+        });else if (user.turn === false && user.player === 1) setPlayer({ ...player,
+          player_one: user.name,
+          player_two: user2.name,
+          ones_turn: false,
+          twos_turn: true
+        });else if (user.turn === true && user.player === 2) setPlayer({ ...player,
+          player_one: user2.name,
+          player_two: user.name,
+          ones_turn: false,
+          twos_turn: true
+        });else if (user.turn === false && user.player === 2) setPlayer({ ...player,
+          player_one: user2.name,
+          player_two: user.name,
+          ones_turn: true,
+          twos_turn: false
+        });
+      }
     });
     socket.on('display.winner', usr => {
       setDis(`${usr} WINS!!`);
     });
-    socket.on('reset.board', () => {
+    socket.on('reset.board', val => {
       let gamesqs = [];
       let bttn;
 
@@ -95508,27 +95599,41 @@ const App = props => {
         gamesqs.push(bttn);
       }
 
-      counter = 0;
-      setGameGrid({ ...gameGrid,
-        game_over: false,
-        winner: '',
-        game_grid: gamesqs,
-        reset: true
-      });
+      counter = 0; //if this opponent has left do a full clear
+
+      if (val === true) {
+        setPlayer({ ...player,
+          ones_turn: false,
+          twos_turn: true,
+          player_one: '',
+          player_two: ''
+        });
+        setGameGrid({ ...gameGrid,
+          game_over: false,
+          winner: '',
+          game_grid: gamesqs,
+          reset: true,
+          player_one_wins: 0,
+          player_two_wins: 0
+        });
+      } else {
+        setPlayer({ ...player,
+          ones_turn: false,
+          twos_turn: true
+        });
+        setGameGrid({ ...gameGrid,
+          game_over: false,
+          winner: '',
+          game_grid: gamesqs,
+          reset: true
+        });
+      }
     });
 
     if (gameGrid.game_over === true) {
       if (gameGrid.winner) socket.emit('game.over', gameGrid.winner);else socket.emit('draw');
     }
   }, [gameGrid]);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    socket.on('player', usr => {
-      setPlayer(usr.player);
-    });
-    socket.on('say.bye', () => {
-      setDis(`Awaiting Opponent`);
-    });
-  }, [squares]);
 
   const sendMessage = event => {
     event.preventDefault();
@@ -95542,7 +95647,15 @@ const App = props => {
     let bttn = document.getElementById(square.id);
 
     if (bttn.dataset.clicked === "false") {
-      socket.emit("move.made", square.id);
+      socket.emit("move.made", square.id); //updateTurn();
+    }
+  };
+
+  const updateTurn = () => {
+    console.log(gameGrid.game_over, 'game over var');
+
+    if (gameGrid.game_over === false) {
+      socket.emit("update.turn");
     }
   };
 
@@ -95564,7 +95677,9 @@ const App = props => {
       className: "gameMessage"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DisplayMessage__WEBPACK_IMPORTED_MODULE_8__["default"], {
       player: player,
-      dis: dis
+      dis: dis,
+      player_one_wins: gameGrid.player_one_wins,
+      player_two_wins: gameGrid.player_two_wins
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "app"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -95579,12 +95694,12 @@ const App = props => {
       className: "game"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Game__WEBPACK_IMPORTED_MODULE_5__["default"], {
       isGameOver: isGameOver,
-      setSquare: setSquare,
       player: player,
       callSendMove: callSendMove
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PlayAgain__WEBPACK_IMPORTED_MODULE_7__["default"], {
       gameGrid: gameGrid,
-      ResetGrid: ResetGrid
+      ResetGrid: ResetGrid,
+      dis: dis
     })));
   }
 };
@@ -95607,20 +95722,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/build/index.js");
-/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Table */ "./node_modules/@material-ui/core/esm/Table/index.js");
-/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "./node_modules/@material-ui/core/esm/TableContainer/index.js");
-/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TableHead */ "./node_modules/@material-ui/core/esm/TableHead/index.js");
-/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TableRow */ "./node_modules/@material-ui/core/esm/TableRow/index.js");
-/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableBody */ "./node_modules/@material-ui/core/esm/TableBody/index.js");
-/* harmony import */ var _material_ui_core_TableFooter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/TableFooter */ "./node_modules/@material-ui/core/esm/TableFooter/index.js");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
-/* harmony import */ var _utils_styledTableCell__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./utils/styledTableCell */ "./src/client/components/utils/styledTableCell.js");
-/* harmony import */ var _Message__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Message */ "./src/client/components/Message.js");
-/* harmony import */ var _styles_Chat_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles/Chat.css */ "./src/client/components/styles/Chat.css");
-/* harmony import */ var _Game__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Game */ "./src/client/components/Game.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Table */ "./node_modules/@material-ui/core/esm/Table/index.js");
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "./node_modules/@material-ui/core/esm/TableContainer/index.js");
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/TableHead */ "./node_modules/@material-ui/core/esm/TableHead/index.js");
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TableRow */ "./node_modules/@material-ui/core/esm/TableRow/index.js");
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TableBody */ "./node_modules/@material-ui/core/esm/TableBody/index.js");
+/* harmony import */ var _material_ui_core_TableFooter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableFooter */ "./node_modules/@material-ui/core/esm/TableFooter/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+/* harmony import */ var _utils_styledTableCell__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./utils/styledTableCell */ "./src/client/components/utils/styledTableCell.js");
+/* harmony import */ var _Message__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Message */ "./src/client/components/Message.js");
+/* harmony import */ var _styles_Chat_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./styles/Chat.css */ "./src/client/components/styles/Chat.css");
 
 
 
@@ -95629,16 +95740,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
- //import { StyledTableCell } from './utils/styledTableCell';
-//import {StyledTableCell, StyledTableRow} from './utils/styledTableCell';
-
-
-
-const {
-  getUser
-} = __webpack_require__(/*! ../../server/users */ "./src/server/users.js");
 
 
 
@@ -95646,34 +95747,32 @@ const {
 let socket;
 
 const Chat = props => {
-  // const [message, setMessage] = useState('');
-  // const [messages, setMessages] = useState([]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "chat"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    component: _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_9__["default"],
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    component: _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_8__["default"],
     style: {
       height: 600,
       width: 300
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_2__["default"], {
     "aria-label": "spanning table"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_utils_styledTableCell__WEBPACK_IMPORTED_MODULE_10__["StyledTableCell"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_utils_styledTableCell__WEBPACK_IMPORTED_MODULE_9__["StyledTableCell"], {
     align: "center",
     colSpan: 3
-  }, "Chat"))), props.messages.map((message, id) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Chat"))), props.messages.map((message, id) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_6__["default"], {
     key: id
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Message__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Message__WEBPACK_IMPORTED_MODULE_10__["default"], {
     message: message,
     name: name
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableFooter__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableFooter__WEBPACK_IMPORTED_MODULE_7__["default"], {
     ref: props.messagesEndRef
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    component: _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_9__["default"],
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    component: _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_8__["default"],
     style: {
       width: 300
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_utils_styledTableCell__WEBPACK_IMPORTED_MODULE_10__["StyledTableCell"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_utils_styledTableCell__WEBPACK_IMPORTED_MODULE_9__["StyledTableCell"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     placeholder: "Enter a message...",
     value: props.message,
@@ -95708,33 +95807,29 @@ __webpack_require__.r(__webpack_exports__);
 const DisplayMessage = props => {
   const {
     player,
-    dis
+    player_one_wins,
+    player_two_wins
   } = props;
-  const [turn, setTurn] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [displayMessage, setDisplayMessage] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const [turn_one, setTurnOne] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [turn_two, setTurnTwo] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    if (player.opponent != 0 && player.turn === true) {
-      setTurn(true);
-    } else {
-      setDisplayMessage('Awaiting Opponent');
-    }
-  }, []);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    if (turn === true) {
-      setDisplayMessage('Your Turn');
-      setTurn(true);
-    } else if (turn === false) {
-      if (player.opponent != 0) {
-        setDisplayMessage("Opponent's Turn");
-        setTurn(false);
-      } else setDisplayMessage("Awaiting Opponent");
+    setTurnOne(player.ones_turn);
+    setTurnTwo(player.twos_turn); // console.log(player.ones_turn, 'in the display player ones turn');
+    // console.log(player.twos_turn, 'in the display player twos turn');
+  }); // if(player.player_one != '' && player.player_two != '')
 
-      setTurn(false);
-    }
-  }, [turn]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "displaymessage"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, dis));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid-container2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: turn_one ? "score_turn" : "score"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, player.player_one ? player.player_one : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, player_one_wins)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: turn_two ? "score_turn" : "score"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, player.player_two ? player.player_two : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, player_two_wins)))); //   else
+  //     return (
+  //         <div></div>
+  //     )
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DisplayMessage);
@@ -95762,7 +95857,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Game = props => {
   const toggleSquare = ev => {
-    props.callSendMove(ev.target);
+    props.callSendMove(ev.target); //props.updateTurn();
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -96204,7 +96299,8 @@ __webpack_require__.r(__webpack_exports__);
 const PlayAgain = props => {
   const {
     gameGrid,
-    ResetGrid
+    ResetGrid,
+    dis
   } = props;
   const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
 
@@ -96241,7 +96337,7 @@ const PlayAgain = props => {
       fontSize: 28,
       fontWeight: 'medium'
     }
-  }, "Play Again?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, dis, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Play Again?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "buttons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     id: "bttn_id2",
@@ -96512,11 +96608,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/TableRow */ "./node_modules/@material-ui/core/esm/TableRow/index.js");
 /* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/TableCell */ "./node_modules/@material-ui/core/esm/TableCell/index.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme */ "./src/client/components/utils/theme.js");
 /* eslint no-underscore-dangle: 'off' */
 
 /* eslint no-console: 'off' */
-
 
 
 
@@ -96728,9 +96822,9 @@ const calculateWinner = gameboard => {
         return true;
       }
     }
-
-    return false;
   }
+
+  return false;
 };
 
 const calculateDraw = count => {
@@ -96740,124 +96834,6 @@ const calculateDraw = count => {
 module.exports = {
   calculateWinner,
   calculateDraw
-};
-
-/***/ }),
-
-/***/ "./src/server/users.js":
-/*!*****************************!*\
-  !*** ./src/server/users.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const users = [];
-const letters = ['O', 'X'];
-
-const addUser = ({
-  id,
-  name,
-  room
-}) => {
-  if (name != undefined) name = name.trim().toLowerCase();
-  let player = '';
-  let letter;
-  let turn = false;
-  let isConnected = null;
-  let opponent = 0;
-  const existingUser = users.find(user => user.room === room && user.name === name);
-
-  if (existingUser) {
-    return {
-      error: 'Username already exists'
-    };
-  }
-
-  let room_users = getUsersInRoom(room); //if a room user is awaiting an opponent
-
-  if (room_users.length < 2) {
-    if (room_users.length === 0) {
-      player = 1;
-      letter = 'X';
-      turn = true;
-      opponent;
-      isConnected;
-    } else if (room_users.length === 1) {
-      if (room_users[0].player === 1) {
-        player = 2;
-        letter = 'O';
-        turn = false;
-        opponent = room_users[0].id;
-        isConnected;
-      } else {
-        room_users[0].player === 1;
-        room_users[0].turn === true;
-        player = 2;
-        letter = 'X';
-        turn = false;
-        opponent = room_users[0].id;
-        isConnected;
-      }
-    }
-  } else {
-    return {
-      error: 'The selected room is full, please select another room'
-    };
-  }
-
-  const user = {
-    id,
-    name,
-    room,
-    player,
-    letter,
-    turn,
-    opponent,
-    isConnected
-  };
-  users.push(user);
-  return {
-    user
-  };
-};
-
-const removeUser = id => {
-  const index = users.findIndex(user => user.id === id);
-  const user = getUser(id);
-  letters.push(user.letter);
-
-  if (index !== -1) {
-    return users.splice(index, 1)[0];
-  }
-};
-
-const getUser = id => {
-  return users.find(user => user.id === id);
-};
-
-const getUsersInRoom = room => {
-  return users.filter(user => user.room === room);
-};
-
-const getAllUsers = () => {
-  return users;
-};
-
-const updateUser = (id, usr_array) => {
-  if (usr_array[0].player === 1) {
-    usr_array[0].opponent = id;
-  } else {
-    usr_array[0].opponent = id;
-  }
-};
-
-module.exports = {
-  addUser,
-  removeUser,
-  getUser,
-  getAllUsers,
-  updateUser,
-  getUsersInRoom
 };
 
 /***/ }),

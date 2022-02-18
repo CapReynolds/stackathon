@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { connect } from 'react-redux';
-import io from 'socket.io-client';
+
 import Table from '@material-ui/core/Table';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
@@ -9,20 +9,13 @@ import TableBody from '@material-ui/core/TableBody';
 import TableFooter from '@material-ui/core/TableFooter';
 import Paper from '@material-ui/core/Paper';
 import {StyledTableCell} from './utils/styledTableCell';
-//import { StyledTableCell } from './utils/styledTableCell';
-//import {StyledTableCell, StyledTableRow} from './utils/styledTableCell';
 import Message from './Message';
-const {getUser} = require("../../server/users");
 import './styles/Chat.css';
 
-import Game from './Game';
-import { createTheme } from "@material-ui/core";
 
 let socket;
 
 const Chat = (props) => {
-    // const [message, setMessage] = useState('');
-    // const [messages, setMessages] = useState([]);
     
     return (
           <div className="chat">

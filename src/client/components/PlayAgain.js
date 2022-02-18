@@ -6,8 +6,9 @@ import DialogContent from '@material-ui/core/DialogContent';
 import './styles/Start.css';
 
 const PlayAgain = (props) => {
-  const {gameGrid, ResetGrid} = props;
+  const {gameGrid, ResetGrid, dis} = props;
   const [open, setOpen] = useState(false);
+
 
   const handleClose = () => {
     setOpen(false);
@@ -32,7 +33,7 @@ const PlayAgain = (props) => {
         <div id="dialog-size2">
           <DialogContent>
            <Box sx={{ color: 'text.primary', fontSize: 28, fontWeight: 'medium' }}>
-            Play Again?
+            {dis}<br></br>Play Again?
            </Box>
           </DialogContent>
           <div id="buttons">

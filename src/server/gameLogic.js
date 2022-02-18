@@ -19,11 +19,13 @@ const calculateWinner = (gameboard)=>{
 				game_grid[a].style.backgroundColor = "green";
 				game_grid[b].style.backgroundColor = "green";
 				game_grid[c].style.backgroundColor = "green";
+				
 				return true;
 			}
 		}
-		return false;
-	}	
+		
+	}
+	return false;	
 }
 
 
