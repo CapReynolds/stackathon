@@ -8,6 +8,7 @@ const Game = (props) => {
 
   const toggleSquare = (ev) =>{   
     props.callSendMove(ev.target);
+    //props.updateTurn();
   }
     
   return (

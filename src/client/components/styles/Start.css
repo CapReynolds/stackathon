@@ -42,3 +42,38 @@
 h1 {
   font-family: "Garamond", "Georgia", serif;
 }
+.grid-container1 {
+  display: flex;
+  width: 400px;
+  height: 60px;
+  flex-direction: column;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.grid-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+	flex-grow: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.score_turn {
+  display: flex;
+  flex-direction: column;
+	flex-grow: 2;
+  background-color: rgba(33, 126, 248, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

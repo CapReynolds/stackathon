@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 
-const {addUser, removeUser, getUser, getAllUsers, updateUser, getUsersInRoom} = require("./users");
+const {addUser, removeUser, getUser, getAllUsers, updateUser, getUsersInRoom, updateWinner} = require("./users");
 app.use(express.json())
 app.use(express.static(__dirname + 'public'));
 let clientPath = path.join(__dirname, 'public');
@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
 const init = async() => {
     try {
         io.on('connection', (socket) => {
-            //console.log('a user joined');
         
             socket.on('join', (data, callback)=>{
                 const {name, room} = data;
@@ -32,7 +31,7 @@ const init = async() => {
                 user.isConnected = socket.connected;
 
                 socket.emit('message', {user: 'admin', text: `welcome to room ${user.room}, ${user.name}`});
-                socket.emit('player', {player: user});
+                //socket.emit('player', user);
 
                 //admin message to to other sockets
                 socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} has joined`});
@@ -41,9 +40,15 @@ const init = async() => {
                 //to update opponent when a new user joins
                 let users = getUsersInRoom(room);
                 if(users.length === 2) {
+                    
+                    //this will update player one
                     updateUser(socket.id,users);
+
+                    //player one
                     const user_opp = getUser(user.opponent);
-                    io.in(user.room).emit('turn.change2',user_opp);
+
+                    //io.in(user.room).emit('turn.change2',user, user_opp);
+                    io.in(user.room).emit('turn.player',user_opp, user);
                 }
             });
             
@@ -55,29 +60,46 @@ const init = async() => {
 
             socket.on("move.made", (squareID) => {   
                 const user = getUser(socket.id);
-
+                //let isWinner = false;
                 if(user.opponent) {
                     const user_opp = getUser(user.opponent);
 
                     //perform checks for whose turn it is 
                     if(user.turn === true) {
                         io.in(user.room).emit('recieveMove', squareID, user, user_opp);
+                        // const user = getUser(socket.id);
+                        // const user_opp = getUser(user.opponent);
+
                         user.turn = false;
                         user_opp.turn = true;
-                        
-                        io.in(user.room).emit('turn.change2',user_opp);}
+
+                        //change player obj
+                        //io.in(user.room).emit('turn.change2',user, user_opp);
+                        io.in(user.room).emit('turn.player',user, user_opp);
+                    }
                     else
                         console.log("not their turn");
                 }
                 
             });
+
+            socket.on("update.turn", () => {  
+                const user = getUser(socket.id);
+                const user_opp = getUser(user.opponent);
+                if(user && user_opp){
+                    user.turn = false;
+                    user_opp.turn = true;
+                    //io.in(user.room).emit('turn.change2',user, user_opp);
+                    io.in(user.room).emit('turn.player', user, user_opp);
+                }
+            });
             
-            socket.on('game.over', ()=> {
+            socket.on('game.over', (winner)=> {
                 const user = getUser(socket.id);
                 const user_opp = getUser(user.opponent);
                 user.turn = false;
                 user_opp.turn = false;
-                io.in(user.room).emit('display.winner', user.name);
+                io.in(user.room).emit('display.winner', winner);
             });
 
             socket.on('clear.board', ()=> {
@@ -87,8 +109,9 @@ const init = async() => {
                 user.turn = false;
                 user_opp.turn = true;
 
-                io.in(user.room).emit('turn.change2',user_opp);
-                io.in(user.room).emit('reset.board');
+                io.in(user.room).emit('turn.change2',user, user_opp);
+                io.in(user.room).emit('reset.board', false);
+
             });
 
             socket.on('draw', ()=> {
@@ -106,7 +129,7 @@ const init = async() => {
                   
                     if(roomUsers.length >= 1){
                         socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} has left. Board has been cleared`});
-                        socket.broadcast.to(user.room).emit('reset.board');
+                        socket.broadcast.to(user.room).emit('reset.board', true);
                         io.in(user.room).emit('say.bye');
                         const user_opp = getUser(user.opponent);
                         if(user_opp != undefined){
@@ -128,8 +151,9 @@ const init = async() => {
                     
                   
                     if(roomUsers.length >= 1){
+                        //let bool = true;
                         socket.broadcast.to(user.room).emit('message', {user: 'admin', text: `${user.name} has left. Board has been cleared`});
-                        socket.broadcast.to(user.room).emit('reset.board');
+                        socket.broadcast.to(user.room).emit('reset.board', true);
                         io.in(user.room).emit('say.bye');
                         const user_opp = getUser(user.opponent);
                         if(user_opp != undefined){
