@@ -44907,7 +44907,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".grid {\n    display: grid;\n    grid-template-columns: auto auto auto;\n    background-color: whitesmoke;\n    padding: 10px;\n    height: 600px;\n  }\n  .grid-square {\n    background-color: rgba(255, 255, 255, 0.8);\n    border: 1px solid rgba(0, 0, 0, 0.8);\n    padding: 20px;\n    font-size: 30px;\n    text-align: center;\n  }\n  .grid-square:nth-child(1) {\n    border-top: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(2) {\n    border-top: none;\n  }\n  .grid-square:nth-child(3) {\n    border-top: none;\n    border-right: none;\n  }\n  .grid-square:nth-child(4) {\n    border-left: none;\n  }\n  .grid-square:nth-child(6) {\n    border-right: none;\n  }\n  .grid-square:nth-child(7) {\n    border-bottom: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(8) {\n    border-bottom: none;\n  }\n  .grid-square:nth-child(9) {\n    border-bottom: none;\n    border-right: none;\n  }", "",{"version":3,"sources":["webpack://./src/client/components/styles/Game.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,qCAAqC;IACrC,4BAA4B;IAC5B,aAAa;IACb,aAAa;EACf;EACA;IACE,0CAA0C;IAC1C,oCAAoC;IACpC,aAAa;IACb,eAAe;IACf,kBAAkB;EACpB;EACA;IACE,gBAAgB;IAChB,iBAAiB;EACnB;EACA;IACE,gBAAgB;EAClB;EACA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;EACA;IACE,iBAAiB;EACnB;EACA;IACE,kBAAkB;EACpB;EACA;IACE,mBAAmB;IACnB,iBAAiB;EACnB;EACA;IACE,mBAAmB;EACrB;EACA;IACE,mBAAmB;IACnB,kBAAkB;EACpB","sourcesContent":[".grid {\n    display: grid;\n    grid-template-columns: auto auto auto;\n    background-color: whitesmoke;\n    padding: 10px;\n    height: 600px;\n  }\n  .grid-square {\n    background-color: rgba(255, 255, 255, 0.8);\n    border: 1px solid rgba(0, 0, 0, 0.8);\n    padding: 20px;\n    font-size: 30px;\n    text-align: center;\n  }\n  .grid-square:nth-child(1) {\n    border-top: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(2) {\n    border-top: none;\n  }\n  .grid-square:nth-child(3) {\n    border-top: none;\n    border-right: none;\n  }\n  .grid-square:nth-child(4) {\n    border-left: none;\n  }\n  .grid-square:nth-child(6) {\n    border-right: none;\n  }\n  .grid-square:nth-child(7) {\n    border-bottom: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(8) {\n    border-bottom: none;\n  }\n  .grid-square:nth-child(9) {\n    border-bottom: none;\n    border-right: none;\n  }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".grid {\n    display: grid;\n    grid-template-columns: auto auto auto;\n    background-color: whitesmoke;\n    padding: 10px;\n    height: 640px;\n  }\n  .grid-square {\n    background-color: rgba(255, 255, 255, 0.8);\n    border: 1px solid rgba(0, 0, 0, 0.8);\n    padding: 20px;\n    font-size: 30px;\n    text-align: center;\n  }\n  .grid-square:nth-child(1) {\n    border-top: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(2) {\n    border-top: none;\n  }\n  .grid-square:nth-child(3) {\n    border-top: none;\n    border-right: none;\n  }\n  .grid-square:nth-child(4) {\n    border-left: none;\n  }\n  .grid-square:nth-child(6) {\n    border-right: none;\n  }\n  .grid-square:nth-child(7) {\n    border-bottom: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(8) {\n    border-bottom: none;\n  }\n  .grid-square:nth-child(9) {\n    border-bottom: none;\n    border-right: none;\n  }", "",{"version":3,"sources":["webpack://./src/client/components/styles/Game.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,qCAAqC;IACrC,4BAA4B;IAC5B,aAAa;IACb,aAAa;EACf;EACA;IACE,0CAA0C;IAC1C,oCAAoC;IACpC,aAAa;IACb,eAAe;IACf,kBAAkB;EACpB;EACA;IACE,gBAAgB;IAChB,iBAAiB;EACnB;EACA;IACE,gBAAgB;EAClB;EACA;IACE,gBAAgB;IAChB,kBAAkB;EACpB;EACA;IACE,iBAAiB;EACnB;EACA;IACE,kBAAkB;EACpB;EACA;IACE,mBAAmB;IACnB,iBAAiB;EACnB;EACA;IACE,mBAAmB;EACrB;EACA;IACE,mBAAmB;IACnB,kBAAkB;EACpB","sourcesContent":[".grid {\n    display: grid;\n    grid-template-columns: auto auto auto;\n    background-color: whitesmoke;\n    padding: 10px;\n    height: 640px;\n  }\n  .grid-square {\n    background-color: rgba(255, 255, 255, 0.8);\n    border: 1px solid rgba(0, 0, 0, 0.8);\n    padding: 20px;\n    font-size: 30px;\n    text-align: center;\n  }\n  .grid-square:nth-child(1) {\n    border-top: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(2) {\n    border-top: none;\n  }\n  .grid-square:nth-child(3) {\n    border-top: none;\n    border-right: none;\n  }\n  .grid-square:nth-child(4) {\n    border-left: none;\n  }\n  .grid-square:nth-child(6) {\n    border-right: none;\n  }\n  .grid-square:nth-child(7) {\n    border-bottom: none;\n    border-left: none;\n  }\n  .grid-square:nth-child(8) {\n    border-bottom: none;\n  }\n  .grid-square:nth-child(9) {\n    border-bottom: none;\n    border-right: none;\n  }"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -95515,50 +95515,6 @@ const App = props => {
         });
       }
     }, [gameGrid]);
-    socket.on('turn.change2', (usr, usr_opp) => {
-      if (gameGrid.winner === '') {
-        // if(usr.turn === true && usr.player === 1)
-        //     setPlayer({...player, player_one: usr.name, player_two: usr_opp.name, ones_turn: true, twos_turn: false });
-        // else if(usr.turn === true && usr.player === 2)
-        //     setPlayer({...player, player_one: usr_opp.name, player_two: usr.name, ones_turn: false, twos_turn: true });
-        // else if(usr.turn === false && usr.player === 1)
-        //     setPlayer({...player, player_one: usr.name, player_two: usr_opp.name, ones_turn: false, twos_turn: true });
-        // else if(usr.turn === false && usr.player === 2)
-        //     setPlayer({...player, player_one: usr_opp.name, player_two: usr.name, ones_turn: true, twos_turn: false });
-        if (usr.turn === true && usr.player === 1) setPlayer({ ...player,
-          player_one: usr.name,
-          player_two: usr_opp.name,
-          ones_turn: true,
-          twos_turn: false
-        });else if (usr.turn === false && usr.player === 1) setPlayer({ ...player,
-          player_one: usr.name,
-          player_two: usr_opp.name,
-          ones_turn: false,
-          twos_turn: true
-        });else if (usr.turn === true && usr.player === 2) setPlayer({ ...player,
-          player_one: usr_opp.name,
-          player_two: usr.name,
-          ones_turn: false,
-          twos_turn: true
-        });
-        if (usr_opp.turn === true && usr_opp.player === 1) setPlayer({ ...player,
-          player_one: usr_opp.name,
-          player_two: usr.name,
-          ones_turn: true,
-          twos_turn: false
-        });else if (usr_opp.turn === false && usr_opp.player === 1) setPlayer({ ...player,
-          player_one: usr_opp.name,
-          player_two: usr.name,
-          ones_turn: false,
-          twos_turn: true
-        });else if (usr_opp.turn === true && usr_opp.player === 2) setPlayer({ ...player,
-          player_one: usr.name,
-          player_two: usr_opp.name,
-          ones_turn: false,
-          twos_turn: true
-        });
-      }
-    });
     socket.on('turn.player', (user, user2) => {
       if (gameGrid.winner === '') {
         if (user.turn === true && user.player === 1) setPlayer({ ...player,
@@ -95647,15 +95603,7 @@ const App = props => {
     let bttn = document.getElementById(square.id);
 
     if (bttn.dataset.clicked === "false") {
-      socket.emit("move.made", square.id); //updateTurn();
-    }
-  };
-
-  const updateTurn = () => {
-    console.log(gameGrid.game_over, 'game over var');
-
-    if (gameGrid.game_over === false) {
-      socket.emit("update.turn");
+      socket.emit("move.made", square.id);
     }
   };
 
